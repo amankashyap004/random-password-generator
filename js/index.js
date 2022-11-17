@@ -57,20 +57,29 @@ toggleBtn.addEventListener("click", ()=> {
 });
 
 //Copied Feature
-randomPasswordFirst.addEventListener('click', ()=>{
+const passwordBoxFirst = document.getElementById('password-box-first')
+const passwordBoxSecond = document.getElementById('password-box-second')
+const copySuccessful = document.getElementById('copy-successful')
+function copySuccessfully(){
+  setTimeout( ()=>{
+    copySuccessful.textContent = "Copy Done Successfully";
+  }, 100);
+
+  setTimeout( ()=>{
+    copySuccessful.textContent = "";
+  }, 1000);
+}
+
+passwordBoxFirst.addEventListener('click', ()=>{
   let text = randomPasswordFirst.textContent;
 	navigator.clipboard.writeText(`${text}`);
 
-  setTimeout( ()=>{
-    randomPasswordFirst.textContent = "Copied";
-  }, 200);
+  copySuccessfully()
 })
 
-randomPasswordSecond.addEventListener('click', ()=>{
+passwordBoxSecond.addEventListener('click', ()=>{
   let text = randomPasswordSecond.textContent;
 	navigator.clipboard.writeText(`${text}`);
 
-  setTimeout( ()=>{
-    randomPasswordSecond.textContent = "Copied";
-  }, 200);
+  copySuccessfully()
 })

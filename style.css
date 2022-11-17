@@ -42,6 +42,7 @@
 .container {
   /* width: 50%; */
   padding: 5rem;
+  padding-bottom: .5rem;
 }
 
 .text-green {
@@ -137,10 +138,19 @@
   /* transition: none !important; */
 }
 
+.copied-feature{
+  color: var(--text-light);
+  font-size: 0.8em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 600px) {
   .container {
     width: 100%;
     padding: 3rem 1.2rem;
+    padding-bottom: 0;
   }
 
   .generator-box-container {
@@ -156,5 +166,9 @@
   .box-margin {
     margin-right: 0;
     margin-bottom: 1.5rem;
+  }
+
+  .copied-feature{
+    font-size: .7em;
   }
 }
