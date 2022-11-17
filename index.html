@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main-body">
+      <section class="container">
+        <div class="main-heading">
+          <div class="heading">
+            <h2>Generate a</h2>
+          </div>
+          <div class="text-green">
+            <h2>random password</h2>
+          </div>
+        </div>
+        <div class="sub-heading">
+          <p>Never use an insecure password again.</p>
+        </div>
+        <section class="btn-container">
+          <button type="submit" class="btn" id="generate-passwords-btn">Generate Passwords</button>
+        </section>
+        <div class="border-line"></div>
+        <section class="generator-box-container">
+          <div class="generator-box box-margin">
+            <p class="random-password" id="random-password-first">First Password</p>
+          </div>
+          <div class="generator-box">
+            <p class="random-password" id="random-password-second">Second Password</p>
+          </div>
+        </section>
+        <div class="toggle-mode" id="toggle-btn">
+          <img src="./img/sun-solid.svg" alt="" class="icon" id="my-icon" />
+          <!-- <img src="./img/sun-solid.svg" alt="" class="icon"> -->
+        </div>
+      </section>
+    </main>
+    <script src="./js/index.js"></script>
+    <script src="./js/characters.js"></script>
+  </body>
+</html>
