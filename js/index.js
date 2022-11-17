@@ -55,3 +55,22 @@ toggleBtn.addEventListener("click", ()=> {
     click = 1;
   }
 });
+
+//Copied Feature
+randomPasswordFirst.addEventListener('click', ()=>{
+  let text = randomPasswordFirst.textContent;
+	navigator.clipboard.writeText(`${text}`);
+
+  setTimeout( ()=>{
+    randomPasswordFirst.textContent = "Copied";
+  }, 200);
+})
+
+randomPasswordSecond.addEventListener('click', ()=>{
+  let text = randomPasswordSecond.textContent;
+	navigator.clipboard.writeText(`${text}`);
+
+  setTimeout( ()=>{
+    randomPasswordSecond.textContent = "Copied";
+  }, 200);
+})
